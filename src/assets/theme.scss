@@ -1,0 +1,81 @@
+@import './variables.scss';
+
+html {}
+
+body {
+ /*  overflow-x: hidden; */
+  margin: 0;
+  height: 100%;
+  max-width: 100vw;
+  font-family: 'font-bold';
+  /* background: $black;
+  color: #FFF; */
+}
+
+a {
+  color: #FFF;
+
+  &:focus, &:hover, &:visited, &:link, &:active {
+    text-decoration: none;
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+span {
+  color: #8c8c91;
+  font-weight: bold;
+  display: block;
+  font-size: calc(12px + 0.05vw);
+}
+
+p {
+  margin: 0;
+  font-size: 18px;
+
+/*   @media #{$small} {
+    font-size: 14px;
+  }
+
+  @media #{$ipad} {
+    font-size: 16px;
+  } */
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0;
+/* 
+  @media #{$small} {
+    font-size: 16px;
+  } */
+}
+
+h2 {
+  line-height: calc(24px + 1vw);
+  font-size: calc(18px + 0.8vw);
+
+  /* @media #{$small} {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media #{$large} {
+    line-height: calc(28px + 1vw);
+    font-size: calc(18px + 1vw);
+  } */
+}
+
+h6 {
+  @media #{$small} {
+    font-size: 16px;
+  }
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+}
+
