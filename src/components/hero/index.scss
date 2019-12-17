@@ -1,0 +1,43 @@
+.hero {
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+  transition: all 0.05s;
+
+  & .text-wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & .text {
+      text-align: center;
+      width: 30%;
+      color: white;
+    }
+
+    & .contact {
+      margin-top: 30px;
+      color: white;
+      display: flex;
+
+      & .contact-item {
+        margin: 0 20px;
+      }
+    }
+  }
+
+  & video, iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
