@@ -54,8 +54,10 @@ h1 {
 }
 
 h2 {
-  line-height: calc(24px + 1vw);
-  font-size: calc(18px + 0.8vw);
+  font-size: 44px;
+  line-height: 50px;
+  /* line-height: calc(24px + 1vw); */
+  /* font-size: calc(18px + 0.8vw); */
 
   /* @media #{$small} {
     font-size: 18px;

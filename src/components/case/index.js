@@ -8,10 +8,6 @@ const Case = ({ caseData }) => {
   const media = data.media.url;
   const link = data.link;
 
-  console.log(data);
-
-  console.log(data.media.name.endsWith('mp4'));
-
   return (
     <a href={link} target="_blank" rel="noopener noreferrer" className="case">
       <div className="media-wrapper">

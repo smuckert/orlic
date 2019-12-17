@@ -1,0 +1,20 @@
+.image-with-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 80px;
+  
+
+  & > img {
+    width: 45%;
+  }
+
+  & .headline-wrapper {
+    width: 45%;
+
+    & > h2 {
+      width: 90%;
+      margin-top: 20%;
+      font-size: 44px;
+    }
+  }
+}
