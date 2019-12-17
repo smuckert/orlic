@@ -1,0 +1,22 @@
+.footer {
+  width: 100%;
+  background: #181818;
+  padding: 100px 80px;
+  box-sizing: border-box;
+  color: white;
+
+  & .column-wrapper {
+    margin-top: 80px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+
+    & .column {
+      & p {
+        &:first-child {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

@@ -6,6 +6,7 @@ import Hero from '../../components/hero';
 import Header from '../../components/header';
 import Case from '../../components/case';
 import ImageWithText from '../../components/image-with-text';
+import Footer from '../../components/footer';
 
 import './index.scss';
 
@@ -14,6 +15,7 @@ const Main = () => {
   const [headerData, setHeaderData] = useState([]);
   const [caseData, setCaseData] = useState([]);
   const [imageWithTextData, setImageWithTextData] = useState([]);
+  const [footerData, setFooterData] = useState([]);
     
   useEffect(() => {
     const fetchData = async () => {
@@ -67,6 +69,19 @@ const Main = () => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await Client.query(
+        Prismic.Predicates.at('document.type', 'footer_component')
+      )
+
+      if (response) {
+        setFooterData(response.results);
+      }
+    }
+    fetchData();
+  }, []);
+
   let renderCases;
   let renderImageWithText;
 
@@ -86,7 +101,6 @@ const Main = () => {
     })
   }
 
-  console.log(imageWithTextData);
   return (
     <div className="main">
       <Header headerData={headerData} />
@@ -100,6 +114,7 @@ const Main = () => {
         </div>
         {renderImageWithText}
       </div>
+      <Footer footerData={footerData} />
     </div>
   )
 }

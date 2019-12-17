@@ -8,7 +8,6 @@ const ImageWithText = ({ imageWithTextData }) => {
   const image = data.image.url;
   const title = data.title[0].text
 
-  console.log(data);
   return (
     <div className="image-with-text" style={{ background: bgColor }}>
       <img src={image} alt="showcase image" />
