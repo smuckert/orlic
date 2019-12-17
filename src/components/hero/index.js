@@ -21,7 +21,6 @@ const Hero = ({ heroData }) => {
     contactMail = data.contact[1].info;
   }
 
-  console.log(data, contact);
   return (
     <div className="hero">
       <video src={video}  autoPlay muted playsInline loop />
