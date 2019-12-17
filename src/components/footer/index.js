@@ -16,17 +16,14 @@ const Footer = ({ footerData }) => {
     footerContent = data.footer_content;
 
     renderColumns = footerContent.map((t, i) => {
-      console.log(t);
       return (
         <div className="column" key={t + i}>
           {RichText.render(t.text_column)}
         </div>
       )
     })
- /*    console.log(footerContent); */
   }
   
-/*   console.log(footerData); */
   return (
     <div className="footer">
       <h2>{title}</h2>

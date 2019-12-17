@@ -16,6 +16,7 @@ const Main = () => {
   const [caseData, setCaseData] = useState([]);
   const [imageWithTextData, setImageWithTextData] = useState([]);
   const [footerData, setFooterData] = useState([]);
+  const [showcaseData, setShowcaseData] = useState([]);
     
   useEffect(() => {
     const fetchData = async () => {
@@ -82,8 +83,22 @@ const Main = () => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await Client.query(
+        Prismic.Predicates.at('document.type', 'showcase')
+      )
+
+      if (response) {
+        setShowcaseData(response.results);
+      }
+    }
+    fetchData();
+  }, []);
+
   let renderCases;
   let renderImageWithText;
+  let showcaseTitle;
 
   if (caseData.length > 0) {
     renderCases = caseData.map((t, i) => {
@@ -101,13 +116,17 @@ const Main = () => {
     })
   }
 
+  if (showcaseData.length > 0) {
+    showcaseTitle = showcaseData[0].data.showcase_title[0].text;
+  }
+
   return (
     <div className="main">
       <Header headerData={headerData} />
       <Hero heroData={heroData} />
       <div className="content-container">
         <div className="showcase">
-          <h2>Showcase</h2>
+          <h2>{showcaseTitle}</h2>
           <div className="case-wrapper">
             {renderCases}
           </div>
