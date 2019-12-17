@@ -23,7 +23,7 @@ const Hero = ({ heroData }) => {
 
   return (
     <div className="hero">
-      <video src={video}  autoPlay muted playsInline loop />
+      <video src={video} autoPlay muted playsInline loop />
       <div className="text-wrapper">
         <div className="text">
           {RichText.render(text)}

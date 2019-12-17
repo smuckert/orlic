@@ -69,7 +69,9 @@ const Main = () => {
       <Hero heroData={heroData} />
       <div className="showcase">
         <h2>Showcase</h2>
-        {renderCases}
+        <div className="case-wrapper">
+          {renderCases}
+        </div>
       </div>
     </div>
   )
