@@ -11,6 +11,7 @@ $iphone-x-max: "only screen and (min-device-width : 414px) and (min-device-heigh
 $iphone-xr: "only screen and (min-device-width : 414px) and (min-device-height: 769px) and (max-device-height : 896px) and (-webkit-device-pixel-ratio : 2)";
 $ipad-landscape: "only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)"; */
 
+$iphone5: "(max-width: 320px)";
 $iphone-x: "only screen and (min-device-width: 375px) and (min-device-height: 668px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3)";
 $small: "(max-width: 767px)";
 $ipad: "(min-width: 768px) and (max-width: 1023px)";
