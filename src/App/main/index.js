@@ -99,6 +99,7 @@ const Main = () => {
   let renderCases;
   let renderImageWithText;
   let showcaseTitle;
+  let bgColor;
 
   if (caseData.length > 0) {
     renderCases = caseData.map((t, i) => {
@@ -118,6 +119,7 @@ const Main = () => {
 
   if (showcaseData.length > 0) {
     showcaseTitle = showcaseData[0].data.showcase_title[0].text;
+    bgColor = showcaseData[0].data.container_background_color;
   }
 
   return (
@@ -125,7 +127,7 @@ const Main = () => {
       <Header headerData={headerData} />
       <Hero heroData={heroData} />
       <div className="content-container">
-        <div className="showcase">
+        <div className="showcase" style={{ background: bgColor }}>
           <h2>{showcaseTitle}</h2>
           <div className="case-wrapper">
             {renderCases}

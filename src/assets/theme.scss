@@ -30,11 +30,12 @@ span {
 
 p {
   margin: 0;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 26px;
+  line-height: 34px;
 
   @media #{$small} {
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   @media #{$ipad-pro-portrait} {
@@ -44,7 +45,7 @@ p {
 }
 
 h1 {
-  font-size: 44px;
+  font-size: 62px;
   margin: 0;
 
   @media #{$small} {
@@ -58,8 +59,13 @@ h1 {
 }
 
 h2 {
-  font-size: 44px;
+  font-size: 52px;
   line-height: 50px;
+
+  @media #{$small} {
+    font-size: 34px;
+    line-height: 38px;
+  }
 
   @media #{$ipad-pro-portrait} {
     font-size: 62px;
@@ -68,7 +74,11 @@ h2 {
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 32px;
+
+  @media #{$small} {
+    font-size: 24px;
+  }
 
   @media #{$ipad-pro-portrait} {
     font-size: 38px;

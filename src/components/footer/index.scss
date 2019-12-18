@@ -3,13 +3,17 @@
 .footer {
   width: 100%;
   background: #181818;
-  padding: 150px 80px;
+  padding: 150px 160px;
   box-sizing: border-box;
   color: white;
 
+  & > h2 {
+    margin-top: 0;
+  }
+
   & .column-wrapper {
-    margin-top: 80px;
-    width: 40%;
+    margin-top: 40px;
+    width: 55%;
     display: flex;
     justify-content: space-between;
 
@@ -23,7 +27,8 @@
   }
 
   @media #{$small} {
-    padding: 80px 20px;
+    padding: 60px 20px;
+    padding-top: 40px;
 
     & > h2 {
       margin: 0;
@@ -31,12 +36,18 @@
 
     & .column-wrapper {
       width: 100%;
-      margin-top: 40px;
+      margin-top: 20px;
       justify-content: initial;
       flex-direction: column;
 
       & .column {
-        margin-bottom: 40px;
+        margin-bottom: 25px;
+
+        & p {
+          &:first-child {
+            margin-bottom: 0;
+          }
+        }
 
         &:last-child {
           margin-bottom: 0px;
