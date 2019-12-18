@@ -76,6 +76,10 @@
 
   @media #{$mdpi} {
     padding: 200px 80px;
+
+    & .headline-wrapper {
+      padding-left: 80px;
+    }
   }
 
   @media #{$ipad-landscape} {
