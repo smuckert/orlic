@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/orlic/precache-manifest.12df427ead0ab711d6d5bc7a4cf5253c.js"
+  "/orlic/precache-manifest.74532f3b133346791d454126808262a7.js"
 );
 
 self.addEventListener('message', (event) => {
