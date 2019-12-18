@@ -21,7 +21,6 @@
       padding: 100px 20px;
 
       & > h2 {
-        text-align: center;
         margin-bottom: 10px;
       }
 
@@ -34,7 +33,7 @@
       padding: 100px 60px;
 
       & .case:last-child {
-        margin-bottom: 0;
+        margin-bottom: 20px;
       }
     }
 
@@ -47,6 +46,8 @@
     }
 
     @media #{$ipad-pro-portrait} {
+      padding: 150px 80px;
+
       & > h2 {
         margin-bottom: 40px;
       }

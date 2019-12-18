@@ -60,7 +60,7 @@
   }
 
   @media #{$ipad} {
-    padding: 100px 60px;
+    padding: 120px 60px;
     justify-content: initial;
     flex-direction: column;
 
@@ -70,6 +70,7 @@
 
     & .headline-wrapper {
       width: 100%;
+      padding-left: 0;
     }
   }
 
@@ -82,6 +83,18 @@
 
     & > img {
       max-height: 80vh;
+    }
+
+    & .headline-wrapper {
+      padding-left: 60px;
+      
+      & h2 {
+        margin-top: 40px;
+      }
+
+      & p {
+        width: 100%;
+      }
     }
   }
 
@@ -97,6 +110,7 @@
 
     & .headline-wrapper {
       width: 100%;
+      padding-left: 0;
 
       & > h2 {
         margin-top: 15%;

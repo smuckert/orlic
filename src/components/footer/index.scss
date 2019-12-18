@@ -60,7 +60,24 @@
     padding: 80px 60px;
 
     & .column-wrapper {
-      width: 85%;
+      width: 100%;
+      margin-top: 20px;
+      justify-content: initial;
+      flex-direction: column;
+
+      & .column {
+        margin-bottom: 25px;
+
+        & p {
+          &:first-child {
+            margin-bottom: 0;
+          }
+        }
+
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
     }
   }
 
@@ -78,11 +95,13 @@
     padding: 100px 40px;
 
     & .column-wrapper {
-      width: 65%;
+      width: 65%!important;
     }
   }
 
   @media #{$ipad-pro-portrait} {
+    padding: 150px 80px;
+
     & > h2 {
       margin: 0;
     }
@@ -104,8 +123,10 @@
   }
 
   @media #{$ipad-pro-landscape} {
-    & .column-wrapper {
-      width: 55%;
+    @media (hover: none) {
+      & .column-wrapper {
+        width: 65%;
+      }
     }
   }
 }
