@@ -52,4 +52,49 @@
       width: 85%;
     }
   }
+
+  @media #{$mdpi} {
+    & .column-wrapper {
+      width: 60%;
+    }
+  }
+
+  @media #{$mdpi} {
+    padding: 100px 80px;
+  }
+
+  @media #{$ipad-landscape} {
+    padding: 100px 40px;
+
+    & .column-wrapper {
+      width: 65%;
+    }
+  }
+
+  @media #{$ipad-pro-portrait} {
+    & > h2 {
+      margin: 0;
+    }
+
+    & .column-wrapper {
+      width: 100%;
+      margin-top: 80px;
+      justify-content: initial;
+      flex-direction: column;
+
+      & .column {
+        margin-bottom: 80px;
+
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+
+  @media #{$ipad-pro-landscape} {
+    & .column-wrapper {
+      width: 55%;
+    }
+  }
 }

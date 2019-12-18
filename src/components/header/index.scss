@@ -46,4 +46,19 @@
       padding: 20px;
     }
   }
+
+  @media #{$ipad-pro-portrait} {
+    & .logo {
+      max-width: 140px;
+    }
+
+    & .icons {
+      & a {
+        & svg {
+          height: 40px;
+          width: 40px;
+        }
+      }
+    }
+  }
 }

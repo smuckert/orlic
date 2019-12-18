@@ -36,7 +36,6 @@
   }
 
   & > h3 {
-    font-size: 26px;
     margin-top: 10px;
   }
 
@@ -50,5 +49,11 @@
     width: 100%;
     max-width: 100%;
     margin-bottom: 150px;
+  }
+
+  @media #{$ipad-pro-portrait} {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 200px;
   }
 }

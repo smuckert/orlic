@@ -15,7 +15,10 @@ $iphone-x: "only screen and (min-device-width: 375px) and (min-device-height: 66
 $small: "(max-width: 767px)";
 $ipad: "(min-width: 768px) and (max-width: 1023px)";
 $ipad-landscape: "only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)";
+$mdpi: "(min-width: 1280px) and (max-width: 1440px)";
 $medium-large: "(min-width: 1441px) and (max-width: 1919px)";
+$ipad-pro-portrait: "(min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5)";
+$ipad-pro-landscape: "(min-width: 1024px) and (max-height: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1.5)";
 $large: "(min-width: 1921px)";
 
 

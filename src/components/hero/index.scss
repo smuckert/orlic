@@ -71,4 +71,36 @@
       object-fit: cover;
     }
   }
+
+  @media #{$mdpi} {
+    & .text-wrapper {
+      & .text {
+        width: 50%;
+      }
+    }
+  }
+
+  @media #{$ipad-landscape} {
+    & .text-wrapper {
+      & .text {
+        width: 50%;
+      }
+    }
+  }
+
+  @media #{$ipad-pro-portrait} {
+    height: 90vh;
+    padding-top: initial;
+
+    & .text-wrapper {
+      & .text {
+        width: 70%;
+        margin-bottom: 40px;
+      }
+    }
+
+    & video, iframe {
+      object-fit: cover;
+    }
+  }
 }

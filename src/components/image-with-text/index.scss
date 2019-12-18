@@ -3,7 +3,7 @@
 .image-with-text {
   display: flex;
   justify-content: space-between;
-  padding: 400px 80px;
+  padding: 300px 80px;
   
   & > img {
     max-height: 90vh;
@@ -51,11 +51,47 @@
 
     & > img {
       max-height: initial;
-      /* width: 100%; */
     }
 
     & .headline-wrapper {
       width: 100%;
+    }
+  }
+
+  @media #{$mdpi} {
+    padding: 200px 80px;
+  }
+
+  @media #{$ipad-landscape} {
+    padding: 150px 40px;
+
+    & > img {
+      max-height: 80vh;
+    }
+  }
+
+  @media #{$ipad-pro-portrait} {
+    padding: 200px 80px;
+    justify-content: initial;
+    flex-direction: column;
+
+    & > img {
+      max-height: initial;
+      height: 80vh;
+    }
+
+    & .headline-wrapper {
+      width: 100%;
+
+      & > h2 {
+        margin-top: 15%;
+      }
+    }
+  }
+
+  @media #{$ipad-pro-landscape} {
+    & > img {
+      max-height: 75vh;
     }
   }
 }

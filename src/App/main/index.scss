@@ -32,5 +32,23 @@
         margin-bottom: 0;
       }
     }
+
+    @media #{$mdpi} {
+      padding: 150px 80px;
+    }
+
+    @media #{$ipad-landscape} {
+      padding: 150px 40px;
+    }
+
+    @media #{$ipad-pro-portrait} {
+      & > h2 {
+        margin-bottom: 40px;
+      }
+
+      & .case:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }
