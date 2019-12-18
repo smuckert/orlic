@@ -1,3 +1,5 @@
+@import '../../assets/variables.scss';
+
 .image-with-text {
   display: flex;
   justify-content: space-between;
@@ -19,12 +21,41 @@
     & > h2 {
       width: 90%;
       margin-top: 20%;
-      font-size: 44px;
     }
 
     & p {
       margin-top: 20px;
       width: 90%;
+    }
+  }
+
+  @media #{$small} {
+    padding: 100px 20px;
+    justify-content: initial;
+    flex-direction: column;
+
+    & > img {
+      max-height: initial;
+      width: 100%;
+    }
+
+    & .headline-wrapper {
+      width: 100%;
+    }
+  }
+
+  @media #{$ipad} {
+    padding: 100px 60px;
+    justify-content: initial;
+    flex-direction: column;
+
+    & > img {
+      max-height: initial;
+      /* width: 100%; */
+    }
+
+    & .headline-wrapper {
+      width: 100%;
     }
   }
 }

@@ -1,3 +1,5 @@
+@import '../../assets/variables.scss';
+
 .footer {
   width: 100%;
   background: #181818;
@@ -7,7 +9,7 @@
 
   & .column-wrapper {
     margin-top: 80px;
-    width: 60%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
 
@@ -17,6 +19,37 @@
           margin-bottom: 20px;
         }
       }
+    }
+  }
+
+  @media #{$small} {
+    padding: 80px 20px;
+
+    & > h2 {
+      margin: 0;
+    }
+
+    & .column-wrapper {
+      width: 100%;
+      margin-top: 40px;
+      justify-content: initial;
+      flex-direction: column;
+
+      & .column {
+        margin-bottom: 40px;
+
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+
+  @media #{$ipad} {
+    padding: 80px 60px;
+
+    & .column-wrapper {
+      width: 85%;
     }
   }
 }

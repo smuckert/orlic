@@ -36,11 +36,11 @@ p {
   font-size: 20px;
   line-height: 28px;
 
-/*   @media #{$small} {
-    font-size: 14px;
+  @media #{$small} {
+    font-size: 16px;
   }
 
-  @media #{$ipad} {
+/*   @media #{$ipad} {
     font-size: 16px;
   } */
 }
@@ -48,10 +48,10 @@ p {
 h1 {
   font-size: 44px;
   margin: 0;
-/* 
+
   @media #{$small} {
-    font-size: 16px;
-  } */
+    font-size: 28px;
+  }
 }
 
 h2 {

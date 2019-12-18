@@ -1,3 +1,5 @@
+@import '../../assets/variables.scss';
+
 .main {
   & .showcase {
     width: 100%;
@@ -7,13 +9,28 @@
     & > h2 {
       margin: 0;
       margin-bottom: 20px;
-      font-size: 44px;
     }
 
     & .case-wrapper {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+    }
+
+    @media #{$small} {
+      padding: 100px 20px;
+
+      & .case:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @media #{$ipad} {
+      padding: 100px 60px;
+
+      & .case:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }

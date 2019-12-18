@@ -41,4 +41,34 @@
     width: 100%;
     height: 100%;
   }
+
+  @media #{$small} {
+    height: 90vh;
+    padding-top: initial;
+
+    & .text-wrapper {
+      & .text {
+        width: 80%;
+      }
+    }
+
+    & video, iframe {
+      object-fit: cover;
+    }
+  }
+
+  @media #{$ipad} {
+    height: 90vh;
+    padding-top: initial;
+
+    & .text-wrapper {
+      & .text {
+        width: 80%;
+      }
+    }
+
+    & video, iframe {
+      object-fit: cover;
+    }
+  }
 }
