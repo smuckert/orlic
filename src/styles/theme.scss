@@ -1,5 +1,15 @@
 @import './variables.scss';
 
+@font-face {
+  font-family: 'font-bold';
+  src: url('./fonts/font-bold.woff'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'font-regular';
+  src: url('./fonts/font-regular.woff'); /* IE9 Compat Modes */
+}
+
 html {}
 
 body {
