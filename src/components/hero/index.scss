@@ -19,7 +19,7 @@
 
     & .text {
       text-align: center;
-      width: 40%;
+      width: 50vw;
       color: white;
     }
 
@@ -48,7 +48,7 @@
 
     & .text-wrapper {
       & .text {
-        width: 80%;
+        width: 90%;
       }
     }
 
@@ -63,7 +63,8 @@
 
     & .text-wrapper {
       & .text {
-        width: 80%;
+        width: 85vw;
+        /* width: 80%; */
       }
     }
 
@@ -75,7 +76,7 @@
   @media #{$mdpi} {
     & .text-wrapper {
       & .text {
-        width: 50%;
+        width: 60vw;
       }
     }
   }
@@ -83,7 +84,7 @@
   @media #{$ipad-landscape} {
     & .text-wrapper {
       & .text {
-        width: 50%;
+        width: 58vw;
       }
     }
   }
@@ -94,7 +95,7 @@
 
     & .text-wrapper {
       & .text {
-        width: 75%;
+        width: 91%;
         margin-bottom: 40px;
       }
     }
