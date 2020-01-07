@@ -3,7 +3,7 @@
 .footer {
   width: 100%;
   background: #181818;
-  padding: 150px 160px;
+  padding: 12vw 8vw;
   box-sizing: border-box;
   color: white;
 
@@ -85,10 +85,6 @@
     & .column-wrapper {
       width: 60%;
     }
-  }
-
-  @media #{$mdpi} {
-    padding: 100px 80px;
   }
 
   @media #{$ipad-landscape} {

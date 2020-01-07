@@ -2,12 +2,10 @@
 
 .image-with-text {
   display: flex;
- /*  justify-content: space-between; */
-  padding: 170px 160px;
+  padding: 12vw 8vw;
   
   & > img {
     max-height: 55vw;
-    /* max-height: 55vmax; */
     transform: scale(1);
     transition: transform 0.4s;
 
@@ -18,18 +16,15 @@
 
   & .headline-wrapper {
     width: 45%;
-    /* padding-left: 80px; */
     padding-left: 5vw;
 
     & > h2 {
-      /* width: 90%; */
       margin-top: 70px;
       margin-bottom: 20px;
     }
 
     & p {
       margin-top: 20px;
-      /* width: 90%; */
     }
   }
 
@@ -62,7 +57,6 @@
   }
 
   @media #{$ipad} {
-    padding: 120px 60px;
     justify-content: initial;
     flex-direction: column;
 
@@ -76,19 +70,8 @@
     }
   }
 
-  @media #{$mdpi} {
-    padding: 200px 80px;
-
-    /* & .headline-wrapper {
-      padding-left: 80px;
-    } */
-  }
-
   @media #{$ipad-landscape} {
-    padding: 150px 40px;
-
     & > img {
-      /* max-height: 80vh; */
       max-height: initial;
       max-width: 100%;
     }

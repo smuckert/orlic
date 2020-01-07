@@ -3,7 +3,8 @@
 .main {
   & .showcase {
     width: 100%;
-    padding: 150px 160px;
+    /* padding: 150px 160px; */
+    padding: 12vw 8vw;
     box-sizing: border-box;
 
     & > h2 {
@@ -18,7 +19,7 @@
     }
 
     @media #{$small} {
-      padding: 100px 20px;
+      padding: 40px 20px;
 
       & > h2 {
         margin-bottom: 10px;
@@ -30,23 +31,21 @@
     }
 
     @media #{$ipad} {
-      padding: 100px 60px;
-
       & .case:last-child {
         margin-bottom: 20px;
       }
     }
 
     @media #{$mdpi} {
-      padding: 150px 80px;
+      /* padding: 150px 80px; */
     }
 
     @media #{$ipad-landscape} {
-      padding: 150px 40px;
+      /* padding: 150px 40px; */
     }
 
     @media #{$ipad-pro-portrait} {
-      padding: 150px 80px;
+      /* padding: 150px 80px; */
 
       & > h2 {
         margin-bottom: 40px;
