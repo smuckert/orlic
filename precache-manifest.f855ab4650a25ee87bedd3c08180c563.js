@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "18e841070af1541ea8da4e235d4e984c",
+    "revision": "6c16d8a8c34578ff3d503abd3a74eabf",
     "url": "/orlic/index.html"
   },
   {
-    "revision": "313b18db4fe94be18ebc",
-    "url": "/orlic/static/css/main.1098ac4e.chunk.css"
+    "revision": "805fd6c64f02e770dd91",
+    "url": "/orlic/static/css/main.a4b7626e.chunk.css"
   },
   {
     "revision": "6ff32c1e266d3141c455",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/orlic/static/js/2.650f2459.chunk.js.LICENSE"
   },
   {
-    "revision": "313b18db4fe94be18ebc",
-    "url": "/orlic/static/js/main.552ec495.chunk.js"
+    "revision": "805fd6c64f02e770dd91",
+    "url": "/orlic/static/js/main.9bd0911c.chunk.js"
   },
   {
     "revision": "ff5a9ec34b39e2352cb6",
