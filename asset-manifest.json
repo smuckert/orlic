@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/orlic/static/css/main.bc6fc2b7.chunk.css",
-    "main.js": "/orlic/static/js/main.b5e79965.chunk.js",
-    "main.js.map": "/orlic/static/js/main.b5e79965.chunk.js.map",
+    "main.css": "/orlic/static/css/main.f07d1e3a.chunk.css",
+    "main.js": "/orlic/static/js/main.cc710cec.chunk.js",
+    "main.js.map": "/orlic/static/js/main.cc710cec.chunk.js.map",
     "runtime-main.js": "/orlic/static/js/runtime-main.781d6a50.js",
     "runtime-main.js.map": "/orlic/static/js/runtime-main.781d6a50.js.map",
     "static/js/2.5392e773.chunk.js": "/orlic/static/js/2.5392e773.chunk.js",
     "static/js/2.5392e773.chunk.js.map": "/orlic/static/js/2.5392e773.chunk.js.map",
     "index.html": "/orlic/index.html",
-    "precache-manifest.4519dd174e881d27da695eedf13b5456.js": "/orlic/precache-manifest.4519dd174e881d27da695eedf13b5456.js",
+    "precache-manifest.0f6cbff90bbe009c00ba6653e2d44907.js": "/orlic/precache-manifest.0f6cbff90bbe009c00ba6653e2d44907.js",
     "service-worker.js": "/orlic/service-worker.js",
-    "static/css/main.bc6fc2b7.chunk.css.map": "/orlic/static/css/main.bc6fc2b7.chunk.css.map",
-    "static/js/2.5392e773.chunk.js.LICENSE": "/orlic/static/js/2.5392e773.chunk.js.LICENSE"
+    "static/css/main.f07d1e3a.chunk.css.map": "/orlic/static/css/main.f07d1e3a.chunk.css.map",
+    "static/js/2.5392e773.chunk.js.LICENSE": "/orlic/static/js/2.5392e773.chunk.js.LICENSE",
+    "static/media/theme.scss": "/orlic/static/media/font-regular.27570860.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.781d6a50.js",
     "static/js/2.5392e773.chunk.js",
-    "static/css/main.bc6fc2b7.chunk.css",
-    "static/js/main.b5e79965.chunk.js"
+    "static/css/main.f07d1e3a.chunk.css",
+    "static/js/main.cc710cec.chunk.js"
   ]
 }
