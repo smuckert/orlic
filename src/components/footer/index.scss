@@ -3,7 +3,7 @@
 .footer {
   width: 100%;
   background: #181818;
-  padding: 12vw 8vw;
+  padding: 8vw;
   box-sizing: border-box;
   color: white;
 
@@ -13,11 +13,13 @@
 
   & .column-wrapper {
     margin-top: 40px;
-    width: 55%;
+    /* width: 55%; */
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 
     & .column {
+      margin-right: 8vw;
+
       & p {
         &:first-child {
           margin-bottom: 20px;
