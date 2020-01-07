@@ -40,10 +40,12 @@ span {
 
 p {
   margin: 0;
+  letter-spacing: 1px;
   /*  font-size: calc(26px - 0.5vw); */
-  line-height: 34px;
-  font-size: calc(8px + 1vw);
-  line-height: calc(19px + 1vw);
+  /* line-height: 34px; */
+  font-size: calc(8px + 0.6vw);
+  line-height: calc(19px + 0.4vw);
+  font-family: 'font-regular';
 
   @media #{$iphone5} {
     font-size: 14px!important;
@@ -75,8 +77,9 @@ h1 {
   /* font-size: 62px;
   line-height: 70px; */
   margin: 0;
-  font-size: calc(30px + 2vw);
-  line-height: calc(34px + 2vw);
+  font-size: calc(30px + 2.2vw);
+  line-height: calc(40px + 2.2vw);
+  font-weight: initial;
 
   @media #{$small} {
     font-size: 28px;
@@ -97,8 +100,9 @@ h1 {
 h2 {
   /*  font-size: 52px;
   line-height: 50px; */
-  font-size: calc(14px + 2vw);
+  font-size: calc(18px + 2vw);
   line-height: calc(22px + 2vw);
+  font-weight: initial;
 
   @media #{$small} {
     font-size: 34px;

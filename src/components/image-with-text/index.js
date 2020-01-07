@@ -11,12 +11,10 @@ const ImageWithText = ({ imageWithTextData }) => {
   const image = data.image.url;
   const title = data.title[0].text;
   const description = data.description_text;
-
-  console.log(textColor);
   
   return (
     <div className="image-with-text" style={{ background: bgColor, color: textColor }}>
-      <img src={image} alt="showcase image" />
+      <img src={image} alt="showcase image"  style={{ boxShadow: `10px 11px 0px 1px ${textColor}` }} />
       <div className="headline-wrapper">
         <h2>{title}</h2>
         {RichText.render(description)}

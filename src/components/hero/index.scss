@@ -19,7 +19,7 @@
 
     & .text {
       text-align: center;
-      width: 50vw;
+      width: 70vw;
       color: white;
     }
 
@@ -30,6 +30,7 @@
 
       & .contact-item {
         margin: 0 20px;
+        letter-spacing: 1px;
       }
     }
   }
@@ -61,31 +62,8 @@
     height: 90vh;
     padding-top: initial;
 
-    & .text-wrapper {
-      & .text {
-        width: 85vw;
-        /* width: 80%; */
-      }
-    }
-
     & video, iframe {
       object-fit: cover;
-    }
-  }
-
-  @media #{$mdpi} {
-    & .text-wrapper {
-      & .text {
-        width: 60vw;
-      }
-    }
-  }
-
-  @media #{$ipad-landscape} {
-    & .text-wrapper {
-      & .text {
-        width: 58vw;
-      }
     }
   }
 
@@ -95,7 +73,6 @@
 
     & .text-wrapper {
       & .text {
-        width: 91%;
         margin-bottom: 40px;
       }
     }

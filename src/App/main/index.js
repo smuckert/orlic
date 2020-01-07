@@ -100,11 +100,18 @@ const Main = () => {
   let renderImageWithText;
   let showcaseTitle;
   let bgColor;
+  let textColor;
+
+  if (showcaseData.length > 0) {
+    showcaseTitle = showcaseData[0].data.showcase_title[0].text;
+    bgColor = showcaseData[0].data.container_background_color;
+    textColor = showcaseData[0].data.text_color
+  }
 
   if (caseData.length > 0) {
     renderCases = caseData.map((t, i) => {
       return (
-        <Case key={t + i} caseData={t} />
+        <Case key={t + i} caseData={t} textColor={textColor ? textColor : undefined} />
       )
     });
   }
@@ -117,17 +124,12 @@ const Main = () => {
     })
   }
 
-  if (showcaseData.length > 0) {
-    showcaseTitle = showcaseData[0].data.showcase_title[0].text;
-    bgColor = showcaseData[0].data.container_background_color;
-  }
-
   return (
     <div className="main">
       <Header headerData={headerData} />
       <Hero heroData={heroData} />
       <div className="content-container">
-        <div className="showcase" style={{ background: bgColor }}>
+        <div className="showcase" style={{ background: bgColor, color: textColor }}>
           <h2>{showcaseTitle}</h2>
           <div className="case-wrapper">
             {renderCases}

@@ -3,13 +3,14 @@
 .main {
   & .showcase {
     width: 100%;
-    /* padding: 150px 160px; */
-    padding: 12vw 8vw;
+    padding: 10vw 11vw;
+    padding-bottom: 15vw;
     box-sizing: border-box;
 
     & > h2 {
       margin: 0;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
+      margin-left: -4px;
     }
 
     & .case-wrapper {
@@ -23,6 +24,7 @@
 
       & > h2 {
         margin-bottom: 10px;
+        margin-left: 0;
       }
 
       & .case:last-child {
@@ -36,19 +38,10 @@
       }
     }
 
-    @media #{$mdpi} {
-      /* padding: 150px 80px; */
-    }
-
-    @media #{$ipad-landscape} {
-      /* padding: 150px 40px; */
-    }
-
     @media #{$ipad-pro-portrait} {
-      /* padding: 150px 80px; */
-
       & > h2 {
         margin-bottom: 40px;
+        margin-left: 0;
       }
 
       & .case:last-child {

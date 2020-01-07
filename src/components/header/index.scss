@@ -2,10 +2,11 @@
 
 .header {
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  /* padding-top: 40px; */
+  /* padding-bottom: 40px; */
+  padding: 40px;
   box-sizing: border-box;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
@@ -13,15 +14,15 @@
   padding-left: 40px;
 
   & .logo {
-    max-width: 280px;
+    max-width: 100px;
   }
 
   & .icons {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    padding-top: 30px;
+    height: 100%;
+    padding: 0 40px;
     box-sizing: border-box;
     position: absolute;
     right: 0;
@@ -38,49 +39,43 @@
     }
   }
 
+  @media #{$iphone5} {
+    & .logo {
+      max-width: 70px!important;
+    }
+  }
+
   @media #{$small} {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 0;
-    height: 50vh;
+    padding: 20px;
 
     & .logo {
       max-width: 80px;
     }
 
     & .icons {
-      display: none;
+      padding: 20px;
+      
+      & a {
+        & svg {
+          height: 20px;
+          width: 20px;
+        }
+      }
     }
   }
 
   @media #{$ipad} {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 0;
-    height: 35vh;
-
-    & .logo {
-      max-width: 200px;
-    }
-
     & .icons {
-      display: none;
-    }
-  }
-
-  @media #{$ipad-landscape} {
-    & .logo {
-      max-width: 120px;
+      & a {
+        & svg {
+          height: 30px;
+          width: 30px;
+        }
+      }
     }
   }
 
   @media #{$ipad-pro-portrait} {
-    & .logo {
-      max-width: 180px;
-    }
-
     & .icons {
       & a {
         & svg {
@@ -94,12 +89,8 @@
   @media #{$ipad-pro-landscape} {
     @media (hover: none) {
       & .logo {
-        max-width: 150px;
+       /*  max-width: 150px; */
       }
     }
-  }
-
-  @media #{$iphone5} {
-    height: 40vh!important;
   }
 }
