@@ -13,8 +13,6 @@ const Header = ({ headerData }) => {
     data = headerData[0].data;
     logo = data.logo.url;
     iconColor = data.icon_color;
-
-    console.log(iconColor);
   }
   
   return (
