@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8f5867c8b71d039239bfada4b50c9d51",
+    "revision": "45522f329ba34c5682700430c8773f1c",
     "url": "/orlic/index.html"
   },
   {
