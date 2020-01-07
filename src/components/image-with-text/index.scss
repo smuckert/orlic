@@ -6,7 +6,8 @@
   padding: 170px 160px;
   
   & > img {
-    max-height: 90vh;
+    max-height: 55vw;
+    /* max-height: 55vmax; */
     transform: scale(1);
     transition: transform 0.4s;
 
@@ -17,17 +18,18 @@
 
   & .headline-wrapper {
     width: 45%;
-    padding-left: 80px;
+    /* padding-left: 80px; */
+    padding-left: 5vw;
 
     & > h2 {
-      width: 90%;
+      /* width: 90%; */
       margin-top: 70px;
       margin-bottom: 20px;
     }
 
     & p {
       margin-top: 20px;
-      width: 90%;
+      /* width: 90%; */
     }
   }
 
@@ -77,16 +79,18 @@
   @media #{$mdpi} {
     padding: 200px 80px;
 
-    & .headline-wrapper {
+    /* & .headline-wrapper {
       padding-left: 80px;
-    }
+    } */
   }
 
   @media #{$ipad-landscape} {
     padding: 150px 40px;
 
     & > img {
-      max-height: 80vh;
+      /* max-height: 80vh; */
+      max-height: initial;
+      max-width: 100%;
     }
 
     & .headline-wrapper {
