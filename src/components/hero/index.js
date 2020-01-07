@@ -9,6 +9,7 @@ const Hero = ({ heroData }) => {
   let text = [];
   let video = '';
   let contact = [];
+  let textColor;
   let contactPhone;
   let contactMail;
 
@@ -17,6 +18,7 @@ const Hero = ({ heroData }) => {
     text = data.hero_text;
     video = data.background_video.url;
     contact = data.contact;
+    textColor = data.text_color;
     contactPhone = data.contact[0].info;
     contactMail = data.contact[1].info;
   }
@@ -25,12 +27,12 @@ const Hero = ({ heroData }) => {
     <div className="hero">
       <video src={video} autoPlay muted playsInline loop />
       <div className="text-wrapper">
-        <div className="text">
+        <div className="text" style={{ color: textColor }}>
           {RichText.render(text)}
         </div>
         <div className="contact">
-          <p className="contact-item">{contactPhone}</p>
-          <a className="contact-item" href={`mailto:${contactMail}`}><p>{contactMail}</p></a>
+          <p className="contact-item" style={{ color: textColor }}>{contactPhone}</p>
+          <a className="contact-item" href={`mailto:${contactMail}`} style={{ color: textColor }}><p>{contactMail}</p></a>
         </div>
       </div>
     </div>

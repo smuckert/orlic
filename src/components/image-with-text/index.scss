@@ -56,10 +56,11 @@
     flex-direction: column;
 
     & > img {
-      max-height: initial;
+      max-height: 80vh;
     }
 
     & .headline-wrapper {
+      margin-top: 40px;
       width: 100%;
       padding-left: 0;
     }
@@ -99,7 +100,7 @@
       padding-left: 0;
 
       & > h2 {
-        margin-top: 15%;
+        margin-top: 10%;
       }
     }
   }
