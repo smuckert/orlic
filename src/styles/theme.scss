@@ -50,8 +50,11 @@ p {
 }
 
 h1 {
-  font-size: 62px;
+  /* font-size: 62px;
+  line-height: 70px; */
   margin: 0;
+  font-size: calc(38px + 1.3vw);
+  line-height: calc(48px + 1.3vw);
 
   @media #{$small} {
     font-size: 28px;

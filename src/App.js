@@ -1,5 +1,5 @@
 import React from 'react';
-import '../src/assets/theme.scss';
+import '../src/styles/theme.scss';
 
 import Main from '../src/App/main';
 
