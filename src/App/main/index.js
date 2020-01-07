@@ -101,11 +101,13 @@ const Main = () => {
   let showcaseTitle;
   let bgColor;
   let textColor;
+  let hide;
 
   if (showcaseData.length > 0) {
     showcaseTitle = showcaseData[0].data.showcase_title[0].text;
     bgColor = showcaseData[0].data.container_background_color;
-    textColor = showcaseData[0].data.text_color
+    textColor = showcaseData[0].data.text_color;
+    hide = showcaseData[0].data.hide;
   }
 
   if (caseData.length > 0) {
@@ -129,7 +131,7 @@ const Main = () => {
       <Header headerData={headerData} />
       <Hero heroData={heroData} />
       <div className="content-container">
-        <div className="showcase" style={{ background: bgColor, color: textColor }}>
+        <div className="showcase" style={{ display: `${hide === 'true' ? 'none' : 'block'}`, background: bgColor, color: textColor }}>
           <h2>{showcaseTitle}</h2>
           <div className="case-wrapper">
             {renderCases}

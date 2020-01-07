@@ -33,6 +33,8 @@
     }
 
     @media #{$ipad} {
+      padding: 18vw 11vw;
+      
       & .case:last-child {
         margin-bottom: 20px;
       }

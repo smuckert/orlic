@@ -57,7 +57,7 @@
   }
 
   @media #{$ipad} {
-    padding: 80px 60px;
+    padding: 10vw 12vw;
 
     & .column-wrapper {
       width: 100%;
@@ -88,7 +88,7 @@
   }
 
   @media #{$ipad-landscape} {
-    padding: 100px 40px;
+    /* padding: 100px 40px; */
 
     & .column-wrapper {
       width: 65%!important;

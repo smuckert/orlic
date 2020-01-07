@@ -44,7 +44,7 @@
   }
 
   @media #{$small} {
-    height: 90vh;
+    height: 100vh;
     padding-top: initial;
 
     & .text-wrapper {
@@ -59,7 +59,7 @@
   }
 
   @media #{$ipad} {
-    height: 90vh;
+    height: 100vh;
     padding-top: initial;
 
     & video, iframe {
@@ -68,7 +68,7 @@
   }
 
   @media #{$ipad-pro-portrait} {
-    height: 90vh;
+    height: 100vh;
     padding-top: initial;
 
     & .text-wrapper {
