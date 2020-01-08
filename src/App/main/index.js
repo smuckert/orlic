@@ -7,6 +7,7 @@ import Header from '../../components/header';
 import Case from '../../components/case';
 import ImageWithText from '../../components/image-with-text';
 import Footer from '../../components/footer';
+import ComingSoon from '../../components/coming-soon';
 
 import './index.scss';
 
@@ -128,7 +129,8 @@ const Main = () => {
 
   return (
     <div className="main">
-      <Header headerData={headerData} />
+      <ComingSoon />
+      {/* <Header headerData={headerData} />
       <Hero heroData={heroData} />
       <div className="content-container">
         <div className="showcase" style={{ display: `${hide === 'true' ? 'none' : 'block'}`, background: bgColor, color: textColor }}>
@@ -139,7 +141,7 @@ const Main = () => {
         </div>
         {renderImageWithText}
       </div>
-      <Footer footerData={footerData} />
+      <Footer footerData={footerData} /> */}
     </div>
   )
 }
