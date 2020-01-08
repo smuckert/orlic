@@ -8,6 +8,7 @@
   & > img {
     max-height: 50vw;
     object-fit: cover;
+    object-position: 0 0;
   }
 
   & .headline-wrapper {
@@ -80,7 +81,7 @@
 
     & .headline-wrapper {
       padding-left: 60px;
-      
+      max-width: 80vw;
       & h2 {
         margin-top: 40px;
       }

@@ -129,8 +129,8 @@ const Main = () => {
 
   return (
     <div className="main">
-      <ComingSoon />
-      {/* <Header headerData={headerData} />
+      {/* <ComingSoon /> */}
+      <Header headerData={headerData} />
       <Hero heroData={heroData} />
       <div className="content-container">
         <div className="showcase" style={{ display: `${hide === 'true' ? 'none' : 'block'}`, background: bgColor, color: textColor }}>
@@ -141,7 +141,7 @@ const Main = () => {
         </div>
         {renderImageWithText}
       </div>
-      <Footer footerData={footerData} /> */}
+      <Footer footerData={footerData} />
     </div>
   )
 }
