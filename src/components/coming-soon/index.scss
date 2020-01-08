@@ -1,9 +1,37 @@
+@import '../../styles/variables.scss';
+
 .coming-soon {
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background: rgb(255, 92, 38);
   color: rgb(51, 34, 84);
+
+  & .login {
+    margin-top: 40px;
+
+    & input {
+      padding: 5px;
+      margin: 10px;
+    }
+
+    & .divider {
+      & .button {
+        cursor: pointer;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: inline-block;
+        border: 2px solid rgb(51, 34, 84);
+        margin: 10px;
+      }
+    }
+
+    @media #{$small} {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 }

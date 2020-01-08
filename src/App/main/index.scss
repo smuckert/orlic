@@ -19,8 +19,12 @@
       flex-wrap: wrap;
     }
 
+    @media #{$iphone5} {
+      padding: 80px 20px!important;
+    }
+
     @media #{$small} {
-      padding: 40px 20px;
+      padding: 80px 40px;
 
       & > h2 {
         margin-bottom: 10px;
