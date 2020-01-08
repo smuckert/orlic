@@ -6,7 +6,7 @@ import './index.scss';
 
 const Header = ({ headerData }) => {
   let data;
-  let logo = '';
+  let logo;
   let iconColor;
 
   if (headerData.length > 0) {
@@ -17,7 +17,9 @@ const Header = ({ headerData }) => {
   
   return (
     <div className="header">
-      <img className="logo" src={logo} alt="logo" />
+      {logo &&
+        <img className="logo" src={logo} alt="logo" />
+      }
       <div className="icons">
         <a href="https://www.whatsapp.com" rel="noopener noreferrer" target="_blank" >
           <FontAwesomeIcon color={iconColor} icon={faWhatsapp}></FontAwesomeIcon>

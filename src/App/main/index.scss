@@ -40,6 +40,10 @@
       }
     }
 
+    @media #{$ipad-landscape} {
+      padding: 8vw 44px;
+    }
+
     @media #{$ipad-pro-portrait} {
       & > h2 {
         margin-bottom: 40px;

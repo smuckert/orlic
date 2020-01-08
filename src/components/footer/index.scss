@@ -88,10 +88,14 @@
   }
 
   @media #{$ipad-landscape} {
-    /* padding: 100px 40px; */
+    padding: 8vw 44px;
 
     & .column-wrapper {
       width: 65%!important;
+
+      & .column {
+        margin-right: 8vw;
+      }
     }
   }
 
