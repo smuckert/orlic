@@ -11,6 +11,9 @@ const Footer = ({ footerData }) => {
   let renderColumns;
   let backgroundColor;
   let textColor;
+  let mediumLink;
+  let twitterLink;
+  let linkedinLink;
 
   if (footerData.length > 0) {
     data = footerData[0].data;
@@ -18,6 +21,9 @@ const Footer = ({ footerData }) => {
     footerContent = data.footer_content;
     backgroundColor = data.background_color;
     textColor = data.text_color;
+    twitterLink = data.footer_links[0].link_item;
+    mediumLink = data.footer_links[1].link_item;
+    linkedinLink = data.footer_links[2].link_item;
 
     renderColumns = footerContent.map((t, i) => {
       return (
@@ -36,13 +42,13 @@ const Footer = ({ footerData }) => {
         <div className="column">
           <p>Connect</p>
           <p>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" style={{ color: textColor }}>Twitter</a>
+            <a href={twitterLink} target="_blank" rel="noopener noreferrer" style={{ color: textColor }}>Twitter</a>
           </p>
           <p>
-            <a href="https://www.medium.com" target="_blank" rel="noopener noreferrer" style={{ color: textColor }}>Medium</a>
+            <a href={mediumLink} target="_blank" rel="noopener noreferrer" style={{ color: textColor }}>Medium</a>
           </p>
           <p>
-            <a href="https://www.LinkedIn.com" target="_blank" rel="noopener noreferrer" style={{ color: textColor }}>LinkedIn</a>
+            <a href={linkedinLink} target="_blank" rel="noopener noreferrer" style={{ color: textColor }}>LinkedIn</a>
           </p>
         </div>
       </div>
