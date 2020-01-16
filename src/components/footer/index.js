@@ -52,7 +52,7 @@ const Footer = ({ footerData }) => {
       <div className="column-wrapper">
         {renderColumns}
         <div className="column">
-          <p>Connect</p>
+          {/* <p>Connect</p> */}
           <p>
             <a href={twitterLink} target="_blank" rel="noopener noreferrer" style={{ color: textColor }}>Twitter</a>
           </p>
