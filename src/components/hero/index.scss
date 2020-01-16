@@ -35,6 +35,10 @@
         @media #{$iphone5} {
           font-size: 13px!important;
         }
+
+        @media #{$small} {
+          margin: 0 15px;
+        }
       }
     }
   }
