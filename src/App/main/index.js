@@ -131,7 +131,7 @@ const Main = () => {
 
   return (
     <div className="main">
-      {username === 'orlic' && password === 'cilrocilrocilro' ? 
+      {/* {username === 'orlic' && password === 'cilrocilrocilro' ? 
       (
         <>
           <Header headerData={headerData} />
@@ -150,7 +150,19 @@ const Main = () => {
       ) : (
         <ComingSoon setUsername={setUsername} setPassword={setPassword} />
       )
-    }
+    } */}
+      <Header headerData={headerData} />
+      <Hero heroData={heroData} />
+      <div className="content-container">
+        <div className="showcase" style={{ display: `${hide === 'true' ? 'none' : 'block'}`, background: bgColor, color: textColor }}>
+          <h2>{showcaseTitle}</h2>
+          <div className="case-wrapper">
+            {renderCases}
+          </div>
+        </div>
+        {renderImageWithText}
+      </div>
+      <Footer footerData={footerData} />
     </div>
   )
 }

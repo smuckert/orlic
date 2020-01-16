@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 
 import { RichText } from 'prismic-reactjs';
 
@@ -14,6 +14,7 @@ const Footer = ({ footerData }) => {
   let mediumLink;
   let twitterLink;
   let linkedinLink;
+  const footerRef = useRef(null);
 
   if (footerData.length > 0) {
     data = footerData[0].data;
@@ -27,15 +28,26 @@ const Footer = ({ footerData }) => {
 
     renderColumns = footerContent.map((t, i) => {
       return (
-        <div className="column" key={t + i}>
+        <div className="column" key={t + i} style={{ color: textColor }}>
           {RichText.render(t.text_column)}
         </div>
       )
     })
   }
+
+  useEffect(() => {
+    let elems = footerRef.current.querySelectorAll('a');
+
+    if (elems) {
+      for (var i = 0; i < elems.length; i++) {
+        elems[i].style.color = textColor;
+      }
+    }
+
+  }, [footerData])
   
   return (
-    <div className="footer" style={{ color: textColor, background: backgroundColor }}>
+    <div className="footer" style={{ color: textColor, background: backgroundColor }} ref={footerRef}>
       <h2>{title}</h2>
       <div className="column-wrapper">
         {renderColumns}
