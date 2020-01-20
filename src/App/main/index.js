@@ -50,7 +50,8 @@ const Main = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await Client.query(
-        Prismic.Predicates.at('document.type', 'case_component')
+        Prismic.Predicates.at('document.type', 'case_component'),
+        { orderings : '[document.last_publication_date desc]' }
       )
 
       if (response) {
